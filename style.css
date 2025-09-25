@@ -1,0 +1,64 @@
+/* Custom Styles for the Stock Market Website */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Very dark grey, almost black */
+}
+
+/* Custom dark colors */
+.bg-black {
+    background-color: #000 !important;
+}
+
+.bg-secondary-dark {
+    background-color: #1e1e1e; /* A slightly lighter dark shade for cards */
+}
+
+.border-secondary {
+    border-color: #333 !important;
+}
+
+/* Form controls styling */
+.form-control:focus, .form-select:focus {
+    background-color: #2a2a2a;
+    color: #fff;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Table styling */
+.table-hover tbody tr:hover {
+    background-color: #2a2a2a;
+    cursor: pointer;
+}
+
+.table > :not(caption) > * > * {
+    border-bottom-width: 1px;
+    border-color: #333; /* Darker borders for table rows */
+}
+
+/* Price change indicators */
+.price-up {
+    color: #28a745; /* Bootstrap green */
+}
+
+.price-up::before {
+    content: '▲ ';
+}
+
+.price-down {
+    color: #dc3545; /* Bootstrap red */
+}
+
+.price-down::before {
+    content: '▼ ';
+}
+
+.price-no-change {
+    color: #6c757d; /* Bootstrap secondary grey */
+}
+
+/* Chart container ensures it has a size */
+#stock-chart {
+    max-height: 400px;
+}
